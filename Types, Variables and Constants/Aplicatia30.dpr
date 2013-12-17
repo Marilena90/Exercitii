@@ -18,7 +18,7 @@ begin
   Write('Introdu anul nasterii: ');
   Readln(vAn);
   vDataNasterii:= EncodeDate(vAn, vLuna, vZi);
-  vZiSaptamana:= DayOfWeek(vDataNasterii)-1;
+  vZiSaptamana:= DayOfWeek(vDataNasterii);
   Writeln('Ziua saptamanii este: ' + IntToStr(vZiSaptamana));
   Readln;
 end.
