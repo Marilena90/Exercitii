@@ -32,7 +32,7 @@ begin
       end;
     end;
   end;
-  Writeln('Propozitia introdusa contine ', vVocalaA, ' vocale a, ' + FloatToStr((vVocalaA / vConsoane) * 100)); //in loc de vConsoane pune sir!!!
+  Writeln('Propozitia introdusa contine ', vVocalaA, ' vocale a, ' + FloatToStr((vVocalaA / vConsoane) * 100));
   Writeln('Propozitia introdusa contine ', vVocalaE, ' vocale e, ' + FloatToStr((vVocalaE / vConsoane) * 100));
   Writeln('Propozitia introdusa contine ', vVocalaI, ' vocale i, ' + FloatToStr((vVocalaI / vConsoane) * 100));
   Writeln('Propozitia introdusa contine ', vVocalaO, ' vocale o, ' + FloatToStr((vVocalaO / vConsoane) * 100));
