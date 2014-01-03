@@ -7,20 +7,21 @@ uses
 
 const
   vKilograme = 0.45359;
-  
+
 var
   vLivre, vRezultat: Double;
 
 begin
-  Writeln;
   Writeln('Conversie din livre in kilograme');
-  Writeln;
-  Write('Introdu numarul de livre: ');
+  Write('Introdu o cantitate pozitiva de livre: ');
   Readln(vLivre);
   vRezultat := vKilograme * vLivre;
-  if vKilograme > 0 then
-    Writeln(FloatToStr(vLivre) + ' Livre = ' + FloatToStr(vRezultat) + ' kilograme');
+  while vLivre < 0 do
+  begin
+    Write('Introdu o cantitate pozitiva de livre: ');
+    Readln(vLivre);
+  end;
+  Writeln(FloatToStr(vLivre) + ' Livre = ' + FloatToStr(vRezultat) + ' kilograme');
   Readln;
-
 end.
 

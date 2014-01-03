@@ -11,17 +11,17 @@ const
   cValTVA3 = 8.5;
 
 var
-  vPret, vValTVA: Double;
+  vPretFaraTVA, vValTVA: Double;
 
 begin
   Write('Introduceti pretul fara TVA: ');
-  Readln(vPret);
-  if vPret < 10000 then
-    vValTVA := vPret * ((100 + cValTVA1) / 100)
-  else if (vPret > 10000) and (vPret < 100000) then
-    vValTVA := vPret * ((100 + cValTVA2) / 100)
-  else if vPret > 100000 then
-    vValTVA := vPret * ((100 + cValTVA3) / 100);
+  Readln(vPretFaraTVA);
+  if vPretFaraTVA < 10000 then
+    vValTVA := cValTVA1 * vPretFaraTVA / 100
+  else if (vPretFaraTVA > 10000) and (vPretFaraTVA < 100000) then
+    vValTVA := cValTVA2 * vPretFaraTVA / 100
+  else if vPretFaraTVA > 100000 then
+    vValTVA := cValTVA3 * vPretFaraTVA / 100;
   write('Valoarea TVA-ului este: ' + FloatToStr(vValTVA));
   Readln;
 end.

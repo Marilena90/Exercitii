@@ -5,13 +5,16 @@ program Aplicatia34;
 uses
   SysUtils;
 
+const
+  cVarstaVot = 18;
+
 var
-  vVarsta: integer;
+  vVarsta: Integer;
 
 begin
   Write('Introduceti varsta unei persoanei: ');
   Readln(vVarsta);
-  if vVarsta < 18 then
+  if vVarsta < cVarstaVot then
     Writeln('Aceasta persoana nu are drept de vot!')
   else
     Writeln('Aceasta persoana are drept de vot!');
