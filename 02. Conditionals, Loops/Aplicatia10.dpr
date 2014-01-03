@@ -9,8 +9,8 @@ var
   a, b, c, vDelta, x1, x2: Double;
 
 begin
-  writeln('Ecuatia de gradul al doilea: ax^2+bx+c=0');
-  writeln;
+  Writeln('Ecuatia de gradul al doilea: ax^2+bx+c=0');
+  Writeln;
   Write('Introduceti valoarea lui a: ');
   Readln(a);
   Write('Introduceti valoarea lui b: ');
@@ -20,25 +20,34 @@ begin
   if (a = 0) then
     if (b = 0) then
       if (c = 0) then
-        writeln('Sol infinite')
+        Writeln('Solutii infinite! ')
       else
-        writeln('nu sunt sol')
-    else begin
-      x1 := -c / b;
-      writeln('Ecuatia este de gradul I si are ca sol:', x1)
-    end
-  else begin
-    vDelta := (b * b) - (4 * a * c);
-    writeln('Delta este ', vDelta);
-    if (vDelta >= 0) then begin
-      x1 := (-b + sqrt(vDelta)) / 2 * a;
-      x2 := (-b - sqrt(vDelta)) / 2 * a;
-      Writeln('Valoare lui x1 este: ' + FloatToStr(x1));
-      Writeln('Valoare lui X2 este: ' + FloatToStr(x2));
-    end
+        Writeln('Nu exista solutii! ')
     else
-      writeln('Ecuatia are solutii complexe!');
+    begin
+      x1 := -c / b;
+      Writeln('Ecuatia este de gradul I si are o singura radacina: ', x1: 1: 2);
+    end
+  else
+  begin
+    vDelta := (b * b) - (4 * a * c);
+    if vDelta > 0 then
+    begin
+      x1 := (-b + sqrt(vDelta)) / (2 * a);
+      x2 := (-b - sqrt(vDelta)) / (2 * a);
+      Writeln('Ecuatia are doua radacini reale: ');
+      Writeln('Valoare lui x1 este: ', x1: 1: 2);
+      Writeln('Valoare lui X2 este: ', x2: 1: 2);
+    end
+    else if vDelta = 0 then
+    begin
+      x1 := -b / 2 * a;
+      Writeln('Ecuatia are doua radacini: ');
+      Writeln('Valoarea lui x1= x2= ', x1: 1: 2);
+    end;
+    if vDelta < 0 then
+      Writeln('Ecuatia are solutii complexe!');
+    Readln;
   end;
-  readln;
 end.
 
