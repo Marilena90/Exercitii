@@ -5,9 +5,6 @@ program Aplicatia42;
 uses
   SysUtils;
 
-const
-  cSir: set of Char = ['A'..'Z'];
-
 var
   sir: string;
   i, vVocalaA, vVocalaE, vVocalaI, vVocalaO, vVocalaU, vConsoane: integer;
@@ -19,7 +16,7 @@ begin
   vConsoane := 0;
   for i := 1 to Length(sir) do
   begin
-    if UpCase(sir[i]) in cSir then
+    if UpCase(sir[i]) in ['A'..'Z'] then
     begin
       case UpCase(sir[i]) of
         'A': vVocalaA := vVocalaA + 1;
