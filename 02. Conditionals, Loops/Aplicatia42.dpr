@@ -29,11 +29,11 @@ begin
       end; 
     end;
   end;
-  Writeln('Propozitia introdusa contine ', vVocalaA, ' vocale a, ' + FloatToStr((vVocalaA / vConsoane) * 100));
-  Writeln('Propozitia introdusa contine ', vVocalaE, ' vocale e, ' + FloatToStr((vVocalaE / vConsoane) * 100));
-  Writeln('Propozitia introdusa contine ', vVocalaI, ' vocale i, ' + FloatToStr((vVocalaI / vConsoane) * 100));
-  Writeln('Propozitia introdusa contine ', vVocalaO, ' vocale o, ' + FloatToStr((vVocalaO / vConsoane) * 100));
-  Writeln('Propozitia introdusa contine ', vVocalaU, ' vocale u, ' + FloatToStr((vVocalaU / vConsoane) * 100));
+  Writeln('Propozitia introdusa contine ', vVocalaA, ' vocale a, ' + FloatToStr((vVocalaA / Length(sir)) * 100));
+  Writeln('Propozitia introdusa contine ', vVocalaE, ' vocale e, ' + FloatToStr((vVocalaE / Length(sir)) * 100));
+  Writeln('Propozitia introdusa contine ', vVocalaI, ' vocale i, ' + FloatToStr((vVocalaI / Length(sir)) * 100));
+  Writeln('Propozitia introdusa contine ', vVocalaO, ' vocale o, ' + FloatToStr((vVocalaO / Length(sir)) * 100));
+  Writeln('Propozitia introdusa contine ', vVocalaU, ' vocale u, ' + FloatToStr((vVocalaU / Length(sir)) * 100));
   Writeln('Propozitia introdusa contine ', vConsoane, ' consoane');
   Readln;
 end.
