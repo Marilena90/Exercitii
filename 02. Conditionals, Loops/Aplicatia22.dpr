@@ -24,7 +24,7 @@ begin
   end;
   vSumaFinala := 1 + vSuma;
   Writeln('Suma 1 + 1!/' + IntToStr(x) + ' + 2!/2*' + IntToStr(x) + ' + ... + ' + 
-   IntToStr(n) + '!/' + IntToStr(n) + '*' + IntToStr(x) + ' este : ' + FloatToStr(vSumaFinala));
+   IntToStr(n) + '!/' + IntToStr(n) + '*' + IntToStr(x) + ' este egala cu: ' + FloatToStr(vSumaFinala));
   Readln;
 end.
 
