@@ -22,7 +22,8 @@ begin
     vRezultat := (1 + vFactorialN) / (i * x);
     vSuma := vSuma + vRezultat;
   end;
-  Writeln('Suma 1 + 1!/X + 2!/2*X + ... + N!/N*X este : ' + FloatToStr(vSuma));
+  Writeln('Suma 1 + 1!/' + IntToStr(x) + ' + 2!/2*' + IntToStr(x) + ' + ... + ' + 
+   IntToStr(n) + '!/' + IntToStr(n) + '*' + IntToStr(x) + ' este : ' + FloatToStr(vSuma));
   Readln;
 end.
 
