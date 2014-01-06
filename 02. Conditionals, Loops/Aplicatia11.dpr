@@ -29,7 +29,7 @@ begin
         Readln(vTypeString);
         Write(vTypeString + '*');
       end;
-  end;
+  end; 
   Readln;
 end.
 
