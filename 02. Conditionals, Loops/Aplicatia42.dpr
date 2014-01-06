@@ -26,7 +26,7 @@ begin
         'U': vVocalaU := vVocalaU + 1;
       else if not (sir[i] in ['A', 'E', 'I', 'O', 'U']) then
         vConsoane := vConsoane + 1;
-      end;
+      end; 
     end;
   end;
   Writeln('Propozitia introdusa contine ', vVocalaA, ' vocale a, ' + FloatToStr((vVocalaA / vConsoane) * 100));
