@@ -7,7 +7,7 @@ uses
 
 var
   i, x, n, vFactorialN: Integer;
-  vRezultat, vSuma: Double;
+  vRezultat, vSuma, vSumaFinala: Double;
 
 begin
   Write('Introduceti numarul N : ');
@@ -19,10 +19,12 @@ begin
   for i := 1 to n do
   begin
     vFactorialN := vFactorialN * i;
-    vRezultat := (1 + vFactorialN) / (i * x);
+    vRezultat := vFactorialN / (i * x);
     vSuma := vSuma + vRezultat;
   end;
-  Writeln('Suma 1 + 1!/X + 2!/2*X + ... + N!/N*X este : ' + FloatToStr(vSuma));
+  vSumaFinala := 1 + vSuma;
+  Writeln('Suma 1 + 1!/' + IntToStr(x) + ' + 2!/2*' + IntToStr(x) + ' + ... + ' + 
+   IntToStr(n) + '!/' + IntToStr(n) + '*' + IntToStr(x) + ' este egala cu: ' + FloatToStr(vSumaFinala));
   Readln;
 end.
 

@@ -5,9 +5,6 @@ program Aplicatia42;
 uses
   SysUtils;
 
-const
-  cSir: set of Char = ['A'..'Z'];
-
 var
   sir: string;
   i, vVocalaA, vVocalaE, vVocalaI, vVocalaO, vVocalaU, vConsoane: integer;
@@ -19,7 +16,7 @@ begin
   vConsoane := 0;
   for i := 1 to Length(sir) do
   begin
-    if UpCase(sir[i]) in cSir then
+    if UpCase(sir[i]) in ['A'..'Z'] then
     begin
       case UpCase(sir[i]) of
         'A': vVocalaA := vVocalaA + 1;
@@ -29,14 +26,14 @@ begin
         'U': vVocalaU := vVocalaU + 1;
       else if not (sir[i] in ['A', 'E', 'I', 'O', 'U']) then
         vConsoane := vConsoane + 1;
-      end;
+      end; 
     end;
   end;
-  Writeln('Propozitia introdusa contine ', vVocalaA, ' vocale a, ' + FloatToStr((vVocalaA / vConsoane) * 100));
-  Writeln('Propozitia introdusa contine ', vVocalaE, ' vocale e, ' + FloatToStr((vVocalaE / vConsoane) * 100));
-  Writeln('Propozitia introdusa contine ', vVocalaI, ' vocale i, ' + FloatToStr((vVocalaI / vConsoane) * 100));
-  Writeln('Propozitia introdusa contine ', vVocalaO, ' vocale o, ' + FloatToStr((vVocalaO / vConsoane) * 100));
-  Writeln('Propozitia introdusa contine ', vVocalaU, ' vocale u, ' + FloatToStr((vVocalaU / vConsoane) * 100));
+  Writeln('Propozitia introdusa contine ', vVocalaA, ' vocale a, ' + FloatToStr((vVocalaA / Length(sir)) * 100));
+  Writeln('Propozitia introdusa contine ', vVocalaE, ' vocale e, ' + FloatToStr((vVocalaE / Length(sir)) * 100));
+  Writeln('Propozitia introdusa contine ', vVocalaI, ' vocale i, ' + FloatToStr((vVocalaI / Length(sir)) * 100));
+  Writeln('Propozitia introdusa contine ', vVocalaO, ' vocale o, ' + FloatToStr((vVocalaO / Length(sir)) * 100));
+  Writeln('Propozitia introdusa contine ', vVocalaU, ' vocale u, ' + FloatToStr((vVocalaU / Length(sir)) * 100));
   Writeln('Propozitia introdusa contine ', vConsoane, ' consoane');
   Readln;
 end.

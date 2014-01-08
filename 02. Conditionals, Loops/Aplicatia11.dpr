@@ -17,19 +17,19 @@ begin
     1: begin
         Write('Introduceti o valoare de tip int: ');
         Readln(vTypeInt);
-        Writeln(inttostr(vTypeInt + 1));
+        Writeln(IntToStr(vTypeInt + 1));
       end;
     2: begin
         Write('Introduceti o valoare de tip double: ');
         Readln(vTypeDouble);
-        Write(floattostr(vTypeDouble + 1));
+        Write(FloatToStr(vTypeDouble + 1));
       end;
     3: begin
         Write('Introduceti o valoare de tip string: ');
         Readln(vTypeString);
         Write(vTypeString + '*');
       end;
-  end;
+  end; 
   Readln;
 end.
 
