@@ -1,21 +1,23 @@
-program AfisareModel;
+program Aplicatia11;
 
 {$APPTYPE CONSOLE}
 
 uses
   SysUtils;
 
+const
+  cStelute = '*****';
+
 begin
-  writeln;
-  Writeln(' *****');
+  Writeln(cStelute);
   Writeln;
-  Writeln(' *****');
+  Writeln(cStelute);
   Writeln;
-  Writeln(' *****');
+  Writeln(cStelute);
   Writeln;
-  Writeln(' *****');
+  Writeln(cStelute);
   Writeln;
-  Writeln(' *****');
+  Writeln(cStelute);
   Readln;
 end.
 

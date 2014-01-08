@@ -1,4 +1,4 @@
-program CodAscii;
+program Aplicatia21;
 
 {$APPTYPE CONSOLE}
 
@@ -9,9 +9,9 @@ var
   vCaracter: Char;
 
 begin
- Writeln;
- Write('Introdu un caracter: ');
- Readln(vCaracter);
- Writeln(Ord(vCaracter));
- Readln;
+  Write('Introdu un caracter: ');
+  Readln(vCaracter);
+  Writeln('Codul ascii pentru caracterul dvs introdus este: ', Ord(vCaracter));
+  Readln;
 end.
+

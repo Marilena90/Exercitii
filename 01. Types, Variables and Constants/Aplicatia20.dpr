@@ -1,4 +1,4 @@
-program SumaBancnoteMonezi;
+program Aplicatia20;
 
 {$APPTYPE CONSOLE}
 
@@ -6,26 +6,26 @@ uses
   SysUtils;
 
 const
-  cLei= 100;
-  cMoneziBani= 50;
-  cMoneziBani2= 10;
-  cBan= 1;
+  cBancnote1Leu = 100;
+  cMonede50Bani = 50;
+  cMonede10Bani = 10;
+  cMonede1Ban = 1;
 
 var
-  vSuma, vRest, vRest2, vRest3, vNrLei, vMoneziBani, vMoneziBani2, vBan: Integer;
+  vSuma, vRest, vBancnote1Leu, vMonede50Bani, vMonede10Bani, vMonede1Ban: Integer;
 
 begin
-  Writeln;
   Write('Introdu suma: ');
   Readln(vSuma);
-  vNrLei:= vSuma div cLei;
-  vRest:= vSuma mod cLei;
-  vMoneziBani:= vRest div cMoneziBani;
-  vRest2:= vRest mod cMoneziBani;
-  vMoneziBani2:= vRest2 div cMoneziBani2;
-  vRest3:= vRest2 mod cMoneziBani2;
-  vBan:= vRest3 div cBan;
-  Writeln('Suma introdusa are ' + IntToStr(vNrLei) + ' bancnote de 1 leu, ' +  IntToStr(vMoneziBani) +
-  ' moneda de 50 bani, ' + IntToStr(vMoneziBani2) + ' monezi de 10 bani, ' + IntToStr(vBan) + ' monezi de 1 ban. ');
+  vBancnote1Leu := vSuma div cBancnote1Leu;
+  vRest := vSuma mod cBancnote1Leu;
+  vMonede50Bani := vRest div cMonede50Bani;
+  vRest := vRest mod cMonede50Bani;
+  vMonede10Bani := vRest div cMonede10Bani;
+  vRest := vRest mod cMonede10Bani;
+  vMonede1Ban := vRest div cMonede1Ban;
+  Writeln('Suma introdusa are ' + IntToStr(vBancnote1Leu) + ' bancnote de 1 leu, ' + IntToStr(vMonede50Bani) +
+    ' moneda de 50 bani, ' + IntToStr(vMonede10Bani) + ' monezi de 10 bani, ' + IntToStr(vMonede1Ban) + ' monezi de 1 ban. ');
   Readln;
 end.
+

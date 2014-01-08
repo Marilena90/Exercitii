@@ -1,21 +1,22 @@
-program CentimetruInch;
+program Aplicatia12;
 
 {$APPTYPE CONSOLE}
 
 uses
   SysUtils;
 
+const
+  cInchCentimetri = 2.54;
+
 var
   vCentimetru, vInch: Double;
 
 begin
-  Writeln;
-  Writeln('     Conversie din centimetri in inchi   ');
-  Writeln;
+  Writeln('Conversie din centimetri in inchi ');
   Write('Introdu cm: ');
   Readln(vCentimetru);
-  vInch := vCentimetru/2.54;
-  Writeln(FloatToStr(vCentimetru) + ' centimetri= ' + FloatToStr(vInch) + ' inchi');
+  vInch := vCentimetru / cInchCentimetri;
+  Writeln(FloatToStr(vCentimetru) + ' centimetri = ' + FloatToStr(vInch) + ' inchi');
   Readln;
 end.
 

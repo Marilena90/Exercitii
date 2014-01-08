@@ -1,15 +1,14 @@
-program AplicatieMagica;
+program Aplicatia10;
 
 {$APPTYPE CONSOLE}
 
 uses
-  SysUtils, Windows;
+  SysUtils;
 
 var
   vNr: Integer;
 
 begin
-  Writeln;
   Write('Introdu un numar: ');
   Readln(vNr);
   Write('Inmulteste-l cu 3 ');
@@ -20,7 +19,7 @@ begin
   Readln;
   Write('Scade Rezultatul din primul numar introdus');
   Readln;
-  MessageBox(0, 'Rezultatul este 2 ', 'Aplicatie Magica', 0);
+  Writeln('Rezultatul este 2! ');
   Readln;
 end.
 
