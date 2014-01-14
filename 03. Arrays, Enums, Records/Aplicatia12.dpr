@@ -7,7 +7,7 @@ uses
 
 var
   c: string;
-  i: Integer;
+  i: Integer; 
 
 begin
   Writeln('Conversie hexazecimal in binar!');
